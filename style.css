@@ -546,6 +546,7 @@ footer p {
 
 
 
+
 /* ============================= */
 /* RESPONSIVE DESIGN */
 /* ============================= */
@@ -669,41 +670,67 @@ footer p {
 /* MOBILE PHONES */
 @media (max-width: 600px) {
 
+    /* NAVIGATION */
+
     nav {
-        height: auto;
-        min-height: 75px;
-        padding: 15px 20px;
-        flex-wrap: wrap;
-        row-gap: 12px;
+        height: 105px;
+        padding: 12px 18px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 40px 30px;
+        align-content: center;
+        row-gap: 8px;
     }
 
     .logo {
-        font-size: 18px;
-        letter-spacing: 4px;
-    }
-
-    .links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
-        padding-bottom: 5px;
-    }
-
-    .links a {
-        font-size: 9px;
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 17px;
+        letter-spacing: 3px;
     }
 
     .nav-actions {
-        gap: 12px;
+        grid-column: 2;
+        grid-row: 1;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .nav-actions a,
+    .nav-actions button {
+        gap: 4px;
+        font-size: 9px;
     }
 
     .nav-actions i {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .nav-actions span {
+        font-size: 8px;
+    }
+
+    .links {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 5px 0;
+    }
+
+    .links a {
+        flex-shrink: 0;
         font-size: 9px;
+        letter-spacing: 0.5px;
+    }
+
+    .links a::after {
+        bottom: -4px;
     }
 
     .dropdown-menu {
@@ -835,26 +862,42 @@ footer p {
 /* SMALL MOBILE PHONES */
 @media (max-width: 400px) {
 
+    /* NAVIGATION */
+
     nav {
-        padding: 12px 15px;
+        padding: 10px 12px;
+        height: 100px;
+        grid-template-rows: 38px 28px;
+        row-gap: 7px;
     }
 
     .logo {
         font-size: 15px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
+    }
+
+    .nav-actions {
+        gap: 7px;
+    }
+
+    .nav-actions a,
+    .nav-actions button {
+        font-size: 8px;
+    }
+
+    .nav-actions i {
+        font-size: 12px;
     }
 
     .links {
-        gap: 10px;
+        gap: 16px;
     }
 
     .links a {
         font-size: 8px;
     }
 
-    .nav-actions {
-        gap: 8px;
-    }
+    /* HERO */
 
     .hero h1 {
         font-size: 45px;
@@ -868,6 +911,8 @@ footer p {
         right: 15px;
         gap: 8px;
     }
+
+    /* MAIN */
 
     main {
         padding: 60px 15px;
