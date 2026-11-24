@@ -545,10 +545,341 @@ footer p {
 
 
 
- /*Responsive*/
-/* PHONES */
-@media (max-width: 600px) {
-    footer {
-        height: 120px;
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* TABLETS */
+@media (max-width: 1024px) {
+
+    nav {
+        padding: 0 40px;
     }
+
+    .links {
+        gap: 18px;
+    }
+
+    .links a {
+        font-size: 11px;
+    }
+
+    .nav-actions {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .hero-content {
+        margin-left: 7%;
+        max-width: 500px;
+    }
+
+    main {
+        padding: 110px 40px;
+    }
+
+    .bag-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* SMALL TABLETS AND LARGE PHONES */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 25px;
+        height: 75px;
+    }
+
+    .logo {
+        font-size: 19px;
+        letter-spacing: 5px;
+    }
+
+    .links {
+        gap: 12px;
+    }
+
+    .links a {
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    .nav-actions span {
+        font-size: 9px;
+    }
+
+    .hero {
+        min-height: 85vh;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero-content {
+        margin-left: 6%;
+        max-width: 450px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+        max-width: 350px;
+    }
+
+    .hero-navigation {
+        right: 6%;
+        bottom: 30px;
+    }
+
+    main {
+        padding: 90px 30px;
+    }
+
+    .bag-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .bag-card img {
+        height: 250px;
+    }
+
+    .bag-card h3 {
+        font-size: 21px;
+    }
+
+    footer {
+        padding: 45px 25px;
+    }
+
+}
+
+
+/* MOBILE PHONES */
+@media (max-width: 600px) {
+
+    nav {
+        height: auto;
+        min-height: 75px;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    .logo {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        padding-bottom: 5px;
+    }
+
+    .links a {
+        font-size: 9px;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    .nav-actions i {
+        font-size: 14px;
+    }
+
+    .nav-actions span {
+        font-size: 9px;
+    }
+
+    .dropdown-menu {
+        min-width: 150px;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 100vh;
+    }
+
+    .hero-content {
+        margin: 0 25px;
+        max-width: 100%;
+    }
+
+    .eyebrow {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .eyebrow-dark {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        max-width: 320px;
+        font-size: 12px;
+        line-height: 1.7;
+        margin-top: 25px;
+    }
+
+    .hero-button {
+        padding: 13px 18px;
+        font-size: 9px;
+    }
+
+    .hero-navigation {
+        right: 20px;
+        bottom: 25px;
+        gap: 12px;
+    }
+
+    .hero-navigation button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .hero-indicators {
+        gap: 6px;
+    }
+
+    .hero-indicators span {
+        width: 15px;
+    }
+
+    .hero-indicators span.active {
+        width: 28px;
+    }
+
+    /* MAIN */
+
+    main {
+        padding: 75px 20px;
+        margin: 0 auto;
+    }
+
+    /* SEARCH */
+
+    .search {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search-box {
+        flex-basis: 100%;
+    }
+
+    .search button {
+        padding: 12px 18px;
+    }
+
+    /* BAG CARDS */
+
+    .bag-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bag-card {
+        padding: 0 18px 20px;
+    }
+
+    .bag-card img {
+        width: calc(100% + 36px);
+        height: 280px;
+        margin: 0 -18px 20px;
+    }
+
+    .bag-card h3 {
+        font-size: 23px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .footer-logo {
+        font-size: 19px;
+    }
+
+    footer p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* SMALL MOBILE PHONES */
+@media (max-width: 400px) {
+
+    nav {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    .links a {
+        font-size: 8px;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-description {
+        font-size: 11px;
+    }
+
+    .hero-navigation {
+        right: 15px;
+        gap: 8px;
+    }
+
+    main {
+        padding: 60px 15px;
+    }
+
+    .bag-card img {
+        height: 230px;
+    }
+
+    .search button {
+        padding: 12px;
+        font-size: 9px;
+    }
+
 }
