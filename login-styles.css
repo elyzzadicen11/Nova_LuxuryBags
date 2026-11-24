@@ -1,0 +1,193 @@
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #F5F1EC;
+    min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+#all-screen {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* LOGIN PANEL */
+#log-in-form {
+    width: 50%;
+    min-height: 100vh;
+    padding: 80px 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FBF9F6;
+}
+
+#log-in-form h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #322D29;
+    
+}
+
+#log-in-form h1 span {
+    color: #8A3A3A;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+#log-in-form h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #322D29;
+}
+
+/* INPUT FIELDS */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    font-size: 13px;
+    margin-bottom: 9px;
+    color: #322D29;
+}
+
+.input-group input {
+    width: 100%;
+    height: 48px;
+    padding: 12px 15px;
+    border: 1px solid #D6CBC2;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    background-color: #FBF9F6;
+}
+
+.input-group input:focus {
+    border-color: #8A3A3A;
+}
+
+/* BUTTONS */
+button {
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#login-button {
+    width: 100%;
+    height: 48px;
+    background-color: #482628;
+    color: #F5F1EC;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#login-button:hover {
+    background-color: #322D29;
+}
+
+#guest-account {
+    width: 100%;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #8A3A3A;
+    border-radius: 5px;
+    color: #8A3A3A;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#guest-account:hover {
+    background-color: #8A3A3A;
+    color: #F5F1EC;
+}
+
+/* OR DIVIDER */
+#log-in-form p {
+    text-align: center;
+    font-size: 12px;
+    color: #9B8C82;
+    margin: 22px 0;
+}
+
+/* RIGHT SIDE IMAGE */
+
+#side-picture {
+    width: 50%;
+    min-height: 100vh;
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent 80%),
+        url('images/login-bag.jpg');
+    background-size: cover;
+    background-position: 60% center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* IMAGE TEXT */
+#image-text {
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    right: 50px;
+    color: white;
+}
+
+#image-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #F5F1EC;
+}
+
+#image-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #F5F1EC;
+    font-style: italic;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    #all-screen {
+        width: 100%;
+    }
+
+    #log-in-form {
+        width: 100%;
+        padding: 50px 35px;
+    }
+
+    #side-picture {
+        display: none;
+    }
+}

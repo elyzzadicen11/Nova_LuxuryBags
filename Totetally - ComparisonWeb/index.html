@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Bag Comparison</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/universal.css">
+
+</head>
+
+<body>
+
+
+<header>
+    <nav id="navbar">
+        <a href="index.html" class="logo">NOVA</a>
+
+        <div class="links">
+            <a href="/index.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#journal">Journal</a>
+            <a href="#contact">Contact</a>
+
+            <div class="pages-dropdown">
+                <a href="#pages" class="pages-link">Pages ⮟</a>
+
+                <div class="dropdown-menu">
+                    <a href="/index.html">Nova Catalog</a>
+                    <a href="/BagItUp - PersonalityWebsite/index.html">Personality Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="/wishlist.html" id="wishlistNav" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="/cart.html" id="cartNav" aria-label="Shopping Bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+            <a href="/adminCRUD.html" id="adminButton" aria-label="Admin Dashboard" style="display: none;">
+                <i class="fa-solid fa-user-gear"></i>
+            </a>
+
+            <button id="loginButton">LOG IN</button>
+
+        </div>
+    </nav>
+</header>
+
+
+    <!-- Bag Selection Section+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <section class="section-one"> <!-- big box containing everything -->
+
+        <div class="select-text"> <!-- select text -->
+            <h2>Select a bag</h2>
+            <p>Select 2 to 3 bags to compare!</p>
+        </div>
+
+        <div class="box-within"> <!-- big box containing filters, dropdowns, and slots -->
+                <!-- Bag Dropdowns Section+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <div class="dropdowns">
+
+                <select id="bag1">
+                    <option value="">Select a bag</option>
+                </select>
+
+                <select id="bag2">
+                    <option value="">Select a bag</option>
+                </select>
+
+                <select id="bag3">
+                    <option value="">Select a bag</option>
+                </select>
+
+            </div>
+
+
+            <!-- Slots where bags will show -->
+            <div class="slots">
+                <div class="bag-slot" id="bagslot1">+</div>
+                <div class="bag-slot" id="bagslot2">+</div>
+                <div class="bag-slot" id="bagslot3">+</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Comparison Section+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section class="section-two">
+        <div class="compari-text">
+            <h2>Comparison</h2>
+        </div>
+
+
+        <div class="compari-filter">
+            <button id="all-btn">All</button>
+            <button id="basic-btn">Basic Information</button>
+            <button id="design-btn">Design & Appearance</button>
+            <button id="materials-btn" >Materials & Construction</button>
+            <button id="additional-btn">Additional Information</button>
+        </div>
+
+         <div id="table-area">
+        <div id="table-content">
+
+            <!-- Bag headers -->
+            <div class="comparison-bags">
+                <div class="comparison-label"></div>
+
+                <div class="comparison-bag">
+                    <h3>Bag 1</h3>
+                </div>
+
+                <div class="comparison-bag">
+                    <h3>Bag 2</h3>
+                </div>
+
+                <div class="comparison-bag">
+                    <h3>Bag 3</h3>
+                </div>
+            </div>
+
+            <!-- BASIC INFORMATION -->
+            <div class="comparison-category" id="basic">
+                <h3>Basic Information</h3>
+
+                <div class="comparison-row" >
+                    <span>Name</span>
+                </div>
+
+                <div class="comparison-row" >
+                    <span>Brand</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Price</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Rating</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Collection</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Availability</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Origin</span>
+                </div>
+            </div>
+
+            <!-- DESIGN & APPEARANCE -->
+            <div class="comparison-category" id="design">
+                <h3>Design & Appearance</h3>
+
+                <div class="comparison-row">
+                    <span>Type</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Size</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Color</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Shape</span>
+                </div>
+            </div>
+
+            <!-- MATERIALS & CONSTRUCTION -->
+            <div class="comparison-category" id="materials">
+                <h3>Materials & Construction</h3>
+
+                <div class="comparison-row">
+                    <span>Material</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Strap Type</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Closure</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Compartments</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Weight (g)</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Water Resistant</span>
+                </div>
+            </div>
+
+            <!-- ADDITIONAL INFORMATION -->
+            <div class="comparison-category" id="additional">
+                <h3>Additional Information</h3>
+
+                <div class="comparison-row">
+                    <span>Description</span>
+                </div>
+
+                <div class="comparison-row">
+                    <span>Buyer Notes</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+    <!-- Footer+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-logo">
+            NOVA
+        </div>
+        <p>
+            Data provided by the Bag Retailer API.
+        </p>
+    </footer>
+
+</body>
+
+<script src = "main.js"></script>
+<script src="/app.js"></script>
+
+</html>

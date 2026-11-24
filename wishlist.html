@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Bag Details</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap">
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="universal.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav id="navbar">
+        <a href="index.html" class="logo">NOVA</a>
+
+        <div class="links">
+            <a href="index.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#journal">Journal</a>
+            <a href="#contact">Contact</a>
+
+            <div class="pages-dropdown">
+                <a href="#pages" class="pages-link">Pages ⮟</a>
+
+                <div class="dropdown-menu">
+                    <a href="Totetally - ComparisonWeb/index.html">Compare Bags</a>
+                    <a href="BagItUp - PersonalityWebsite/index.html">Personality Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="wishlist.html" id="wishlistNav" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html" id="cartNav" aria-label="Shopping Bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+            <a href="adminCRUD.html" id="adminButton" aria-label="Admin Dashboard" style="display: none;">
+                <i class="fa-solid fa-user-gear"></i>
+            </a>
+
+            <button id="loginButton">LOG IN</button>
+
+        </div>
+    </nav>
+</header>
+
+
+
+    <!-- WISHLIST -->
+    <main class="wishlist-page">
+
+        <div class="wishlist-heading">
+            <h1>MY WISHLIST</h1>
+            <p>Your collection of favorites.</p>
+        </div>
+
+        <div class="wishlist-divider"></div>
+
+        <section class="wishlist-container" id="wishlistContainer">
+            <!-- Items heree -->
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-logo">
+            NOVA
+        </div>
+
+        <p>
+            Data provided by the Bag Retailer API.
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

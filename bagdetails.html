@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Bag Details</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap">
+    <link rel="stylesheet" href="bagdetails.css">
+    <link rel="stylesheet" href="universal.css">
+
+</head>
+
+<body>
+
+
+<header>
+    <nav id="navbar">
+        <a href="index.html" class="logo">NOVA</a>
+
+        <div class="links">
+            <a href="index.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#journal">Journal</a>
+            <a href="#contact">Contact</a>
+
+            <div class="pages-dropdown">
+                <a href="#pages" class="pages-link">Pages ⮟</a>
+
+                <div class="dropdown-menu">
+                    <a href="Totetally - ComparisonWeb/index.html">Compare Bags</a>
+                    <a href="BagItUp - PersonalityWebsite/index.html">Personality Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="wishlist.html" id="wishlistNav" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html" id="cartNav" aria-label="Shopping Bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+            <a href="adminCRUD.html" id="adminButton" aria-label="Admin Dashboard" style="display: none;">
+                <i class="fa-solid fa-user-gear"></i>
+            </a>
+
+            <button id="loginButton">LOG IN</button>
+
+        </div>
+    </nav>
+</header>
+
+
+    <div id="bagLoading" class="bag-loading">
+        <div class="loading-spinner"></div>
+        <p>LOADING BAG DETAILS...</p>
+    </div>
+
+
+    <main class="product-page" style="visibility: hidden;">
+        <section class="product-image-section">
+            <div class="product-image-card">
+                <img id="bagImage" src="images/1.png" alt="Featured NOVA bag">
+
+                <button class="wishlist-button" id="wishlistButton" type="button"
+                    aria-label="Add to wishlist" title="Add to wishlist">
+                    ♥
+                </button>
+
+                <div class="image-shade"></div>
+
+                <div class="image-caption">
+                    <p class="image-bag-name" id="imageBagName">BAG NAME</p>
+                    <div class="image-tags">
+                        <span id="imageBrand">BRAND</span>
+                        <span id="imageCollection">COLLECTION</span>
+                    </div>
+                    <div class="rating">
+                        <span class="stars" aria-label="5 stars">★★★★★</span>
+                        <span id="bagRating">4.5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-information">
+            <div class="product-heading">
+                <p class="eyebrow" id="bagCollection"></p>
+                <h1 id="bagName">BAG NAME</h1>
+                <p class="product-summary" id="bagSummary">MATERIAL | SIZE | COLOR</p>
+                <p class="product-price" id="bagPrice">Price</p>
+            </div>
+
+            <div class="details-accordions">
+
+                <details class="detail-accordion" open>
+                    <summary>
+                        <span>Description</span>
+                        <span class="accordion-icon"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <p id="bagDescription">Discover the details that make this piece special.</p>
+                        <p class="buyer-notes" id="buyerNotes"></p>
+                    </div>
+                </details>
+
+                <details class="detail-accordion">
+                    <summary>
+                        <span>Design &amp; Appearance</span>
+                        <span class="accordion-icon"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <dl class="specification-list">
+                            <div><dt>Type</dt><dd id="bagType">—</dd></div>
+                            <div><dt>Size</dt><dd id="bagSize">—</dd></div>
+                            <div><dt>Color</dt><dd id="bagColor">—</dd></div>
+                            <div><dt>Shape</dt><dd id="bagShape">—</dd></div>
+                        </dl>
+                    </div>
+                </details>
+
+                <details class="detail-accordion">
+                    <summary>
+                        <span>Materials &amp; Construction</span>
+                        <span class="accordion-icon"></span>
+                    </summary>
+                    <div class="accordion-content">
+                        <dl class="specification-list">
+                            <div><dt>Material</dt><dd id="bagMaterial">—</dd></div>
+                            <div><dt>Strap Type</dt><dd id="bagStrapType">—</dd></div>
+                            <div><dt>Closure</dt><dd id="bagClosure">—</dd></div>
+                            <div><dt>Compartments</dt><dd id="bagCompartments">—</dd></div>
+                            <div><dt>Weight</dt><dd id="bagWeight">—</dd></div>
+                            <div><dt>Water Resistance</dt><dd id="bagWaterResistance">—</dd></div>
+                        </dl>
+                    </div>
+                </details>
+
+            </div>
+
+            <div class="product-actions">
+                <button class="add-to-cart-button" id="addToCartButton" type="button">
+                    Add to Cart
+                </button>
+                <button class="buy-now-button" id="buyNowButton" type="button">
+                    Buy Now
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Luxury Bags Retailer</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+ 
+
+<header>
+    <nav id="navbar">
+        <a href="#home" class="logo">NOVA</a>
+
+        <div class="links">
+            <a href="#collection">Shop</a>
+            <a href="#about">About</a>
+            <a href="#journal">Journal</a>
+            <a href="#contact">Contact</a>
+
+            <div class="pages-dropdown">
+                <a href="#pages" class="pages-link">Pages ⮟</a>
+
+                <div class="dropdown-menu">
+                    <a href="Totetally - ComparisonWeb/index.html">Compare Bags</a>
+                    <a href="BagItUp - PersonalityWebsite/index.html">Personality Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="wishlist.html" id="wishlistNav" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html" id="cartNav" aria-label="Shopping Bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+            <a href="adminCRUD.html" id="adminButton" aria-label="Admin Dashboard" style="display: none;">
+                <i class="fa-solid fa-user-gear"></i>
+            </a>
+
+            <button id="loginButton">Log In</button>
+
+        </div>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-shadow"></div>
+
+    <div class="hero-slides">
+
+        <!-- SLIDE 1: NOVA STORE -->
+        <div class="hero-slide active">
+            <div class="hero-content">
+                <p class="eyebrow">MADE FOR YOU</p>
+
+                <h1>
+                    Carry<br>
+                    <span>Something</span><br>
+                    Magnificent.
+                </h1>
+
+                <p class="hero-description">
+                    A collection of bags for every style and occasion.
+                </p>
+
+                <a href="#collection" class="hero-button">
+                    EXPLORE COLLECTION
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- COMPARE BAGS -->
+        <div class="hero-slide">
+            <div class="hero-content">
+                <p class="eyebrow">THE ART OF COMPARISON</p>
+
+                <h1>
+                    Can't find a<br>
+                    <span>Perfect Fit?</span><br>
+                </h1>
+
+                <p class="hero-description">
+                    Compare designs, details, and features to find the right bag.
+                </p>
+
+                <a href="Totetally - ComparisonWeb/index.html" class="hero-button">
+                    COMPARE BAGS
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- BAG PERSONALITY -->
+        <div class="hero-slide">
+            <div class="hero-content">
+                <p class="eyebrow">A STYLE BEYOND THE COSMOS</p>
+
+                <h1>
+                    Discover<br>
+                    Your <span>Star</span><br>
+                </h1>
+
+                <p class="hero-description">
+                    See bags that best resonates with you and your personality!
+                </p>
+
+                <a href="BagItUp - PersonalityWebsite/index.html" class="hero-button">
+                    FIND YOUR MATCH
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CAROUSEL CONTROLS -->
+    <div class="hero-navigation">
+        <button id="heroPrev" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="hero-indicators">
+            <span class="active" data-slide="0"></span>
+            <span data-slide="1"></span>
+            <span data-slide="2"></span>
+        </div>
+
+        <button id="heroNext" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+</section>
+
+
+    <!-- COLLECTION -->
+
+    <main id="collection">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow-dark">THE COLLECTION</p>
+            </div>
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <section class="search">
+            <div class="search-box">
+                <span>⌕</span>
+                <input type="text" id="searchInput" placeholder="Search a bag...">
+            </div>
+            <button onclick="searchBags()">Search</button>
+            <button class="secondary" onclick="loadBags()"> Show All </button>
+        </section>
+
+
+        <!-- BAG CARDS -->
+
+        <section>
+            <div id="bagList" class="bag-list">
+                Loading collection...
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-logo">
+            NOVA
+        </div>
+        <p>
+            Data provided by the Bag Retailer API.
+        </p>
+    </footer>
+    <script src="app.js"></script>
+    
+
+</body>
+
+</html>

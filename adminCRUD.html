@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Admin Dashboard</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap">
+    <link rel="stylesheet" href="adminCRUD.css">
+    <link rel="stylesheet" href="universal.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav id="navbar">
+
+            <a href="#home" class="logo">NOVA</a>
+
+            <div class="links">
+                <a href="index.html">Shop</a>
+                <a href="#about">About</a>
+                <a href="#journal">Journal</a>
+                <a href="#contact">Contact</a>
+                <a href="#pages">Pages</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#dashboard" id="adminButton" aria-label="Admin Dashboard">
+                    <i class="fa-solid fa-user-gear"></i>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ADMIN DASHBOARD -->
+    <main class="admin-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="admin-sidebar">
+
+            <div class="sidebar-menu">
+
+                <button class="sidebar-option active" id="dashboardButton">
+                    <i class="fa-solid fa-chart-line"></i>
+                    DASHBOARD
+                </button>
+
+            </div>
+
+            <button class="logout-button" id="logoutButton">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                LOG OUT
+            </button>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <section class="admin-content" id="dashboard">
+
+
+            <!-- BAG LIST VIEW -->
+            <div id="bagListView">
+
+                <div class="admin-heading">
+
+                    <div>
+                        <p class="admin-eyebrow">NOVA ADMINISTRATION</p>
+                        <h1>LIST OF BAGS</h1>
+                    </div>
+
+                    <button class="add-bag-button" id="addNewBagButton">
+                        <i class="fa-solid fa-plus"></i>
+                        ADD NEW BAG
+                    </button>
+
+                </div>
+
+                <div class="admin-bag-list" id="adminBagList">
+                    <!-- BAG ITEMS WILL BE LOADED HERE -->
+                </div>
+
+            </div>
+
+
+            <!-- CREATE BAG VIEW -->
+            <div id="createBagView" hidden>
+
+                <div class="admin-heading">
+
+                    <div>
+                        <p class="admin-eyebrow">NOVA ADMINISTRATION</p>
+                        <h1>ADD NEW BAG</h1>
+                    </div>
+
+                    <button type="button" class="back-button" id="backFromCreate">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        BACK TO LIST
+                    </button>
+
+                </div>
+
+                <form id="createBagForm">
+
+                    <div id="createBagFields">
+                        <!-- CREATE FIELDS WILL BE GENERATED HERE -->
+                    </div>
+
+                    <p id="createBagMessage"></p>
+
+                    <div class="form-actions">
+
+                        <button type="button" class="cancel-button" id="cancelCreateBag">
+                            CANCEL
+                        </button>
+
+                        <button type="submit" class="save-button">
+                            <i class="fa-solid fa-check"></i>
+                            SAVE BAG
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- UPDATE BAG VIEW -->
+            <div id="updateBagView" hidden>
+
+                <div class="admin-heading">
+
+                    <div>
+                        <p class="admin-eyebrow">NOVA ADMINISTRATION</p>
+                        <h1>EDIT BAG</h1>
+                    </div>
+
+                    <button type="button" class="back-button" id="backFromUpdate">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        BACK TO LIST
+                    </button>
+
+                </div>
+
+                <form id="updateBagForm">
+
+                    <div id="updateBagFields">
+                        <!-- UPDATE FIELDS WILL BE GENERATED HERE -->
+                    </div>
+
+                    <p id="updateBagMessage"></p>
+
+                    <div class="form-actions">
+
+                        <button type="button" class="delete-button" id="deleteBagButton">
+                            <i class="fa-solid fa-trash"></i>
+                            DELETE BAG
+                        </button>
+
+                        <div class="form-actions-right">
+
+                            <button type="button" class="cancel-button" id="cancelUpdateBag">
+                                CANCEL
+                            </button>
+
+                            <button type="submit" class="save-button">
+                                <i class="fa-solid fa-check"></i>
+                                SAVE CHANGES
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

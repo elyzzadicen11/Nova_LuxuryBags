@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA — Bag Details</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="universal.css">
+</head>
+
+<body>
+
+
+<header>
+    <nav id="navbar">
+        <a href="index.html" class="logo">NOVA</a>
+
+        <div class="links">
+            <a href="index.html">Shop</a>
+            <a href="#about">About</a>
+            <a href="#journal">Journal</a>
+            <a href="#contact">Contact</a>
+
+            <div class="pages-dropdown">
+                <a href="#pages" class="pages-link">Pages ⮟</a>
+
+                <div class="dropdown-menu">
+                    <a href="Totetally - ComparisonWeb/index.html">Compare Bags</a>
+                    <a href="BagItUp - PersonalityWebsite/index.html">Personality Quiz</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-actions">
+
+            <a href="wishlist.html" id="wishlistNav" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="cart.html" id="cartNav" aria-label="Shopping Bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+            <a href="adminCRUD.html" id="adminButton" aria-label="Admin Dashboard" style="display: none;">
+                <i class="fa-solid fa-user-gear"></i>
+            </a>
+
+            <button id="loginButton">LOG IN</button>
+
+        </div>
+    </nav>
+</header>
+
+    <!-- CART PAGE -->
+
+    <main class="cart-page">
+
+        <div class="cart-heading">
+            <div>
+                <h1>Shopping Bag</h1>
+                <p class="cart-subtitle">
+                    Review your selected pieces before proceeding.
+                </p>
+            </div>
+
+            <p class="item-count" id="itemCount">0 ITEMS</p>
+        </div>
+
+
+        <!-- CART LIST -->
+
+        <section class="cart-container">
+            <div class="cart-list" id="cartList">
+                <!-- bagstuff -->
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- CART SUMMARY -->
+
+    <footer class="cart-summary">
+
+        <div class="summary-information">
+
+            <div>
+                <p class="summary-label">SELECTED ITEMS</p>
+                <p class="summary-value" id="selectedCount">0 items</p>
+            </div>
+
+            <div>
+                <p class="summary-label">TOTAL</p>
+                <p class="summary-total" id="selectedTotal">$0.00</p>
+            </div>
+
+        </div>
+
+        <div class="checkout-button">
+            <a href="https://www.youtube.com/shorts/SX2JLYK6xqg" target="_blank">
+                Proceed to Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+</html>

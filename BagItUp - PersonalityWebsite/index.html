@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Bag Type Are You?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="start-screen">
+        <button id="backMain">←</button>
+        <h1> Which Bag Type Are you?</h1>
+        <p>PERSONALITY TEST</p>
+        <button id="Start"> FIND OUT NOW! ➜ </button>
+    </section>
+
+    <section class="questions-screen">
+        <button id="backStart">←</button>
+        <div id="white-box">
+            <div id="question-border">
+                <p id="counter">Question 1 out of 12</p>
+                <h2 class="question-text">Question Here!</h2>
+            </div>
+            <div id="answers">
+                <button class="answer-button">Answer 1</button>
+                <button class="answer-button">Answer 2</button>
+                <button class="answer-button">Answer 3</button>
+                <button class="answer-button">Answer 4</button>
+            </div>
+            <div class="buttons-nav">
+                <button id="prev">←</button>
+                <button id="next">→</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="result-screen">
+        <div id="red-thingy"></div> <!---red thingy behind the result-->
+        <div id="white-thingy"> <!---White thingy with result-->
+            <p id="result-header">You are a...</p>
+            <div id="bag-type">
+                <h1>Insert Stuff</h1>
+                <button id="reset-quiz">QUIZ AGAIN!</button>
+                <button id="mainPage">MAIN PAGE</button>
+            </div>
+        </div>
+        <div id="result-body"> <!---White thingy with desc and related bags-->
+            <h2>Description</h2>
+            <p id="result-label">You are a...</p>
+            <p id="result-desc">Lorem ....</p>
+
+            <div id="separator"></div>
+
+            <h2>Related Bags</h2>
+            <div id="related-bags">
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <footer></footer>
+</body>
+<script src="questions.js"></script>
+<script src="script.js"></script>
+<script src="/app.js"></script>
+
+
+</html>

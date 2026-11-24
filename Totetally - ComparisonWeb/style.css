@@ -1,0 +1,446 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap');
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-color: #F5F1EC;
+    color: #322D29;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+/* Selection Content */
+.section-one {
+    margin-top: 80px;
+    padding: 60px 12%;
+    background-color: #F2EDE7;
+    box-shadow: 0 4px 10px rgba(50, 45, 41, 0.18);
+    position: relative;
+    z-index: 1;
+}
+
+.select-text {
+    margin-bottom: 35px;
+}
+
+.select-text h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #322D29;
+}
+
+.select-text p {
+    margin: 0;
+    font-size: 15px;
+    color: #756D68;
+}
+
+.box-within {
+    background-color: #E8E0D8;
+    border: 1px solid #C7BBB2;
+    padding: 30px;
+    width: 100%;
+}
+
+
+
+/* bag dropdowns */
+.dropdowns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    min-width: 0;
+}
+
+.dropdowns select {
+    background-color: #F2EDE7;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #C7BBB2;
+    font-size: 13px;
+    color: #756D68;
+    width: 100%;
+}
+
+
+
+/* Bag slots where they will show */
+.slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    min-width: 0;
+}
+
+.bag-slot {
+    border: 1px solid #C7BBB2;
+    background-color: #f5f1ed;
+    min-height: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag-slot:hover {
+    border-color: #9B8C82;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+.bag-slot img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.bag-slot h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 15px 0 8px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #322D29;
+}
+
+.bag-slot p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #756D68;
+}
+
+.bag-slot button {
+    height: 40px;
+    padding: 0 18px;
+    border: 1px solid #72383D;
+    background-color: #72383D;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bag-slot span {
+    font-size: 40px;
+    color: #9B8C82;
+}
+
+.bag-slot button:hover{
+    color: #72383D;
+    background-color: #f5f1ed;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* SECTION TWO ==================================================================================================================================== */
+.section-two {
+    padding: 60px 12%;
+    background-color: #F2EDE7;
+}
+
+.compari-text {
+    margin-bottom: 30px;
+}
+
+.compari-text h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #322D29;
+}
+
+.compari-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.compari-filter button {
+    padding: 12px 18px;
+    border: 1px solid #72383D;
+    background-color: #f5f1ed;
+    color: #72383D;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.compari-filter button:hover {
+    background-color: #72383D;
+    color: #F2EDE7;
+}
+
+
+
+
+/* TABLE ==================================================================================================================================== */
+
+#table-area {
+    width: 100%;
+    border: 1px solid #C7BBB2;
+    background-color: #f5f1ed;
+    overflow-x: auto;
+}
+
+#table-content {
+    width: 100%;
+    min-width: 800px;
+}
+
+.comparison-bags {
+    display: grid;
+    grid-template-columns: 180px repeat(3, 1fr);
+    border-bottom: 1px solid #C7BBB2;
+    background-color: #F2EDE7;
+}
+
+.comparison-label {
+    padding: 20px;
+}
+
+.comparison-bag {
+    padding: 20px;
+    text-align: center;
+    border-left: 1px solid #C7BBB2;
+}
+
+.comparison-bag h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #322D29;
+}
+
+
+
+
+
+
+.comparison-category h3 {
+    margin: 0;
+    padding: 15px 20px;
+    background-color: #E8E0D8;
+    font-size: 18px;
+    font-weight: 600;
+        color: #322D29;
+    border-bottom: 1px solid #C7BBB2;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+.comparison-row {
+    display: grid;
+    grid-template-columns: 180px repeat(3, 1fr);
+    border-bottom: 1px solid #D6CBC2;
+    color: #756D68;
+    
+}
+
+.comparison-row span {
+    padding: 15px 20px;
+    font-size: 11px;
+    min-width: 0;
+    line-height: 1.5;
+    word-break: break-word;
+    color: #756D68;
+}
+
+.comparison-row span:not(:first-child) {
+    border-left: 1px solid #D6CBC2;
+    color: #322D29;
+    font-size: 12px;
+}
+
+.comparison-row span:first-child {
+    font-weight: 500;
+    color: #72383D;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #f5f1ed;
+}
+
+/*Responsive*/
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+    .section-one {
+        padding: 45px 30px;
+    }
+
+    .section-two {
+        padding: 45px 30px;
+    }
+
+    .select-text h2,
+    .compari-text h2 {
+        font-size: 26px;
+    }
+
+    .dropdowns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bag-slot {
+        min-height: 350px;
+    }
+}
+
+/* PHONES */
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    
+    .navbar {
+        height: 65px;
+    }
+
+    .navbar h1 {
+        font-size: 17px;
+        letter-spacing: 4px;
+        white-space: nowrap;
+    }
+
+
+    /* SECTION ONE */
+
+    .section-one {
+        padding: 35px 18px;
+    }
+
+    .select-text {
+        margin-bottom: 25px;
+    }
+
+    .select-text h2,
+    .compari-text h2 {
+        font-size: 23px;
+    }
+
+    .select-text p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .box-within {
+        padding: 18px;
+    }
+
+
+    /* DROPDOWNS */
+
+    .dropdowns {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .dropdowns select {
+        height: 42px;
+    }
+
+
+    /* BAG SLOTS */
+
+    .slots {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .bag-slot {
+        min-height: 350px;
+        padding: 18px;
+    }
+
+    .bag-slot img {
+        height: 200px;
+    }
+
+    .bag-slot h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .bag-slot p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+    /* SECTION TWO */
+
+    .section-two {
+        padding: 40px 18px;
+    }
+
+    .compari-text {
+        margin-bottom: 20px;
+    }
+
+    .compari-filter {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .compari-filter button {
+        padding: 10px 14px;
+        font-size: 9px;
+    }
+
+
+    /* COMPARISON TABLE */
+
+    #table-area {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;  
+
+    }
+
+
+    #table-area::-webkit-scrollbar{
+        height: 6px;
+        display: block;
+        background-color:#72383D
+}
+
+
+    #table-content {
+        min-width: 700px;
+    }
+
+
+}
