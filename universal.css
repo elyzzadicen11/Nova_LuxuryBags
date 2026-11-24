@@ -203,284 +203,104 @@ footer p {
 
 
 
-/* ============================= */
 /* RESPONSIVE DESIGN */
-/* ============================= */
 
 /* TABLETS */
 @media (max-width: 1024px) {
-
-    nav {
-        padding: 0 40px;
+    .wishlist-page {
+        padding-left: 45px;
+        padding-right: 45px;
     }
 
-    .logo {
-        font-size: 21px;
-        letter-spacing: 5px;
+    .wishlist-item {
+        gap: 20px;
     }
-
-    .links {
-        gap: 18px;
-    }
-
-    .links a {
-        font-size: 11px;
-    }
-
-    .nav-actions {
-        gap: 15px;
-    }
-
-    .nav-actions a,
-    .nav-actions button {
-        font-size: 11px;
-    }
-
-    footer {
-        padding: 50px 35px;
-    }
-
 }
-
 
 /* SMALL TABLETS */
 @media (max-width: 900px) {
-
-    nav {
-        padding: 0 30px;
+    .wishlist-page {
+        padding-left: 30px;
+        padding-right: 30px;
     }
-
-    .links {
-        gap: 12px;
-    }
-
-    .links a {
-        font-size: 10px;
-    }
-
-    .nav-actions {
-        gap: 12px;
-    }
-
 }
 
-
-/* TABLETS AND MOBILE */
+/* MOBILE */
 @media (max-width: 768px) {
-
-    nav {
-        height: 75px;
-        padding: 0 20px;
+    .wishlist-page {
+        padding: 95px 22px 75px;
     }
 
-    .logo {
-        font-size: 19px;
-        letter-spacing: 4px;
+    .wishlist-item {
+        flex-wrap: wrap;
+        gap: 18px;
     }
 
-    .links {
-        display: flex;
-        gap: 20px;
+    .wishlist-image {
+        width: 130px;
+        height: 150px;
     }
 
-    .nav-actions {
-        gap: 15px;
+    .wishlist-information {
+        flex: 1;
+        min-width: 180px;
     }
 
-    .nav-actions i {
-        font-size: 15px;
+    .wishlist-details {
+        gap: 10px;
     }
 
-    .nav-actions span {
-        font-size: 10px;
+    .wishlist-actions {
+        width: 100%;
+        justify-content: flex-start;
     }
-
-    main {
-        padding-top: 75px;
-    }
-
-    .bag-loading {
-        min-height: 75vh;
-        gap: 15px;
-    }
-
-    footer {
-        padding: 45px 25px;
-    }
-
-    .footer-logo {
-        font-size: 20px;
-        letter-spacing: 5px;
-    }
-
 }
 
-
-/* MOBILE PHONES */
+/* SMALL MOBILE */
 @media (max-width: 600px) {
-
-    nav {
-        height: 105px;
-        padding: 12px 18px;
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-rows: 40px 30px;
-        align-content: center;
-        row-gap: 8px;
+    .wishlist-page {
+        padding: 125px 18px 60px;
     }
 
-    .logo {
-        grid-column: 1;
-        grid-row: 1;
-        font-size: 17px;
-        letter-spacing: 3px;
+    .wishlist-item {
+        gap: 14px;
     }
 
-    .nav-actions {
-        grid-column: 2;
-        grid-row: 1;
-        justify-content: flex-end;
+    .wishlist-image {
+        width: 110px;
+        height: 130px;
+    }
+
+    .wishlist-information {
+        min-width: 0;
+    }
+
+    .wishlist-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wishlist-actions {
+        gap: 12px;
+    }
+}
+
+/* EXTRA SMALL MOBILE */
+@media (max-width: 400px) {
+    .wishlist-page {
+        padding: 120px 15px 50px;
+    }
+
+    .wishlist-image {
+        width: 95px;
+        height: 115px;
+    }
+
+    .wishlist-item {
         gap: 12px;
     }
 
-    .nav-actions a,
-    .nav-actions button {
-        gap: 4px;
-        font-size: 10px;
+    .wishlist-actions {
+        flex-wrap: wrap;
     }
-
-    .nav-actions i {
-        font-size: 14px;
-    }
-
-    .nav-actions span {
-        font-size: 9px;
-    }
-
-    .links {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        overflow-x: auto;
-        white-space: nowrap;
-        width: 100%;
-        padding-bottom: 3px;
-    }
-
-    .links a {
-        flex-shrink: 0;
-        font-size: 10px;
-    }
-
-    main {
-        padding-top: 105px;
-    }
-
-    .dropdown-menu {
-        min-width: 150px;
-    }
-
-    .dropdown-menu a {
-        padding: 10px 14px;
-        font-size: 11px;
-    }
-
-    .bag-loading {
-        min-height: 70vh;
-        gap: 15px;
-    }
-
-    .bag-loading p {
-        font-size: 10px;
-        letter-spacing: 1.5px;
-        text-align: center;
-    }
-
-    .loading-spinner {
-        width: 30px;
-        height: 30px;
-    }
-
-    footer {
-        padding: 35px 20px;
-        height: auto;
-    }
-
-    .footer-logo {
-        font-size: 18px;
-        letter-spacing: 4px;
-    }
-
-    footer p {
-        font-size: 10px;
-        line-height: 1.7;
-        margin-bottom: 15px;
-    }
-
-}
-
-
-/* SMALL MOBILE PHONES */
-@media (max-width: 400px) {
-
-    nav {
-        height: 100px;
-        padding: 10px 12px;
-        grid-template-rows: 38px 28px;
-        row-gap: 7px;
-    }
-
-    .logo {
-        font-size: 15px;
-        letter-spacing: 2px;
-    }
-
-    .nav-actions {
-        gap: 8px;
-    }
-
-    .nav-actions a,
-    .nav-actions button {
-        font-size: 9px;
-    }
-
-    .nav-actions i {
-        font-size: 13px;
-    }
-
-    .nav-actions span {
-        font-size: 8px;
-    }
-
-    .links {
-        gap: 16px;
-    }
-
-    .links a {
-        font-size: 9px;
-    }
-
-    main {
-        padding-top: 100px;
-    }
-
-    .bag-loading {
-        padding: 0 15px;
-    }
-
-    .bag-loading p {
-        font-size: 9px;
-    }
-
-    footer {
-        padding: 30px 15px;
-    }
-
-    .footer-logo {
-        font-size: 16px;
-        letter-spacing: 3px;
-    }
-
 }
