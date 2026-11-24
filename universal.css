@@ -295,6 +295,10 @@ footer p {
         font-size: 10px;
     }
 
+    main {
+        padding-top: 75px;
+    }
+
     .bag-loading {
         min-height: 75vh;
         gap: 15px;
@@ -368,6 +372,10 @@ footer p {
     .links a {
         flex-shrink: 0;
         font-size: 10px;
+    }
+
+    main {
+        padding-top: 105px;
     }
 
     .dropdown-menu {
@@ -452,6 +460,10 @@ footer p {
 
     .links a {
         font-size: 9px;
+    }
+
+    main {
+        padding-top: 100px;
     }
 
     .bag-loading {
