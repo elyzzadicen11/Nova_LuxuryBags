@@ -207,6 +207,19 @@ footer p {
 
 /* TABLETS */
 @media (max-width: 1024px) {
+
+    nav {
+        padding: 0 40px;
+    }
+
+    .links {
+        gap: 18px;
+    }
+
+    .nav-actions {
+        gap: 15px;
+    }
+
     .wishlist-page {
         padding-left: 45px;
         padding-right: 45px;
@@ -217,19 +230,54 @@ footer p {
     }
 }
 
+
 /* SMALL TABLETS */
 @media (max-width: 900px) {
+
     .wishlist-page {
         padding-left: 30px;
         padding-right: 30px;
     }
 }
 
+
 /* MOBILE */
 @media (max-width: 768px) {
+
+    /* NAVIGATION */
+
+    nav {
+        height: 70px;
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
     .links {
         display: none;
     }
+
+    .nav-actions {
+        gap: 15px;
+    }
+
+    .nav-actions a,
+    .nav-actions button {
+        font-size: 10px;
+    }
+
+    .nav-actions i {
+        font-size: 15px;
+    }
+
+    .nav-actions span {
+        font-size: 9px;
+    }
+
+    /* WISHLIST */
 
     .wishlist-page {
         padding: 95px 22px 75px;
@@ -260,11 +308,56 @@ footer p {
     }
 }
 
+
 /* SMALL MOBILE */
 @media (max-width: 600px) {
+
+    /* NAVIGATION */
+
     nav {
-        height: 70px;
+        height: 67px;
+        padding: 0 max(20px, calc((100% - 330px) / 2));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    .logo {
+        font-size: 22px;
+        letter-spacing: 6px;
+        white-space: nowrap;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    .nav-actions a,
+    .nav-actions button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .nav-actions i {
+        font-size: 15px;
+    }
+
+    .nav-actions span {
+        font-size: 10px;
+    }
+
+    /* DROPDOWN */
 
     .pages-dropdown {
         position: relative;
@@ -293,6 +386,8 @@ footer p {
         white-space: nowrap;
     }
 
+    /* WISHLIST */
+
     .wishlist-page {
         padding: 95px 18px 60px;
     }
@@ -320,8 +415,38 @@ footer p {
     }
 }
 
+
 /* EXTRA SMALL MOBILE */
 @media (max-width: 400px) {
+
+    /* NAVIGATION */
+
+    nav {
+        height: 67px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 19px;
+        letter-spacing: 5px;
+    }
+
+    .nav-actions {
+        gap: 12px;
+        margin-left: 12px;
+    }
+
+    .nav-actions a,
+    .nav-actions button {
+        font-size: 9px;
+    }
+
+    .nav-actions i {
+        font-size: 14px;
+    }
+
+    /* WISHLIST */
+
     .wishlist-page {
         padding: 95px 15px 50px;
     }
