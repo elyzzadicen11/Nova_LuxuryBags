@@ -203,11 +203,10 @@ footer p {
 
 
 
-/* RESPONSIVE DESIGN */
+/* NAVBAR RESPONSIVE DESIGN */
 
 /* TABLETS */
 @media (max-width: 1024px) {
-
     nav {
         padding: 0 40px;
     }
@@ -216,214 +215,20 @@ footer p {
         gap: 18px;
     }
 
+    .links a {
+        font-size: 11px;
+    }
+
     .nav-actions {
         gap: 15px;
     }
-
-    .wishlist-page {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-
-    .wishlist-item {
-        gap: 20px;
-    }
 }
-
 
 /* SMALL TABLETS */
-@media (max-width: 900px) {
-
-    .wishlist-page {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
-
-/* MOBILE */
 @media (max-width: 768px) {
-
-    /* NAVIGATION */
-
     nav {
-        height: 70px;
         padding: 0 25px;
-    }
-
-    .logo {
-        font-size: 20px;
-        letter-spacing: 5px;
-    }
-
-    .links {
-        display: none;
-    }
-
-    .nav-actions {
-        gap: 15px;
-    }
-
-    .nav-actions a,
-    .nav-actions button {
-        font-size: 10px;
-    }
-
-    .nav-actions i {
-        font-size: 15px;
-    }
-
-    .nav-actions span {
-        font-size: 9px;
-    }
-
-    /* WISHLIST */
-
-    .wishlist-page {
-        padding: 95px 22px 75px;
-    }
-
-    .wishlist-item {
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-
-    .wishlist-image {
-        width: 130px;
-        height: 150px;
-    }
-
-    .wishlist-information {
-        flex: 1;
-        min-width: 180px;
-    }
-
-    .wishlist-details {
-        gap: 10px;
-    }
-
-    .wishlist-actions {
-        width: 100%;
-        justify-content: flex-start;
-    }
-}
-
-
-/* SMALL MOBILE */
-@media (max-width: 600px) {
-
-    /* NAVIGATION */
-
-    nav {
-        height: 67px;
-        padding: 0 max(20px, calc((100% - 330px) / 2));
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .logo {
-        font-size: 22px;
-        letter-spacing: 6px;
-        white-space: nowrap;
-    }
-
-    .links {
-        display: none;
-    }
-
-    .nav-actions {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 15px;
-        margin-left: 20px;
-    }
-
-    .nav-actions a,
-    .nav-actions button {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 11px;
-        white-space: nowrap;
-    }
-
-    .nav-actions i {
-        font-size: 15px;
-    }
-
-    .nav-actions span {
-        font-size: 10px;
-    }
-
-    /* DROPDOWN */
-
-    .pages-dropdown {
-        position: relative;
-    }
-
-    .pages-dropdown:focus-within .dropdown-menu,
-    .pages-dropdown.open .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        min-width: 150px;
-        background-color: #F5F1EC;
-        padding: 10px 0;
-        z-index: 2000;
-    }
-
-    .dropdown-menu a {
-        display: block;
-        padding: 10px 14px;
-        color: #72383D;
-        font-size: 11px;
-        white-space: nowrap;
-    }
-
-    /* WISHLIST */
-
-    .wishlist-page {
-        padding: 95px 18px 60px;
-    }
-
-    .wishlist-item {
-        gap: 14px;
-    }
-
-    .wishlist-image {
-        width: 110px;
-        height: 130px;
-    }
-
-    .wishlist-information {
-        min-width: 0;
-    }
-
-    .wishlist-details {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .wishlist-actions {
-        gap: 12px;
-    }
-}
-
-
-/* EXTRA SMALL MOBILE */
-@media (max-width: 400px) {
-
-    /* NAVIGATION */
-
-    nav {
-        height: 67px;
-        padding: 0 18px;
+        height: 75px;
     }
 
     .logo {
@@ -431,36 +236,132 @@ footer p {
         letter-spacing: 5px;
     }
 
+    .links {
+        display: flex;
+        gap: 12px;
+    }
+
+    .links a {
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
     .nav-actions {
         gap: 12px;
-        margin-left: 12px;
+    }
+
+    .nav-actions span {
+        font-size: 9px;
+    }
+}
+
+/* MOBILE PHONES */
+@media (max-width: 600px) {
+
+    nav {
+        height: 100px;
+        padding: 12px 18px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 40px 30px;
+        align-content: center;
+        row-gap: 8px;
+    }
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 17px;
+        letter-spacing: 3px;
+    }
+
+    .nav-actions {
+        grid-column: 2;
+        grid-row: 1;
+        gap: 10px;
+        justify-content: flex-end;
     }
 
     .nav-actions a,
     .nav-actions button {
+        gap: 4px;
         font-size: 9px;
     }
 
     .nav-actions i {
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    /* WISHLIST */
-
-    .wishlist-page {
-        padding: 95px 15px 50px;
+    .nav-actions span {
+        font-size: 8px;
     }
 
-    .wishlist-image {
-        width: 95px;
-        height: 115px;
+    .links {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 5px 0;
     }
 
-    .wishlist-item {
-        gap: 12px;
+    .links a {
+        flex-shrink: 0;
+        font-size: 9px;
+        letter-spacing: 0.5px;
     }
 
-    .wishlist-actions {
-        flex-wrap: wrap;
+    .links a::after {
+        bottom: -4px;
+    }
+
+    .dropdown-menu {
+        min-width: 150px;
+    }
+
+    .pages-dropdown:focus-within .dropdown-menu,
+    .pages-dropdown.open .dropdown-menu {
+        display: block;
+    }
+}
+
+/* SMALL MOBILE PHONES */
+@media (max-width: 400px) {
+
+    nav {
+        padding: 10px 12px;
+        height: 100px;
+        grid-template-rows: 38px 28px;
+        row-gap: 7px;
+    }
+
+    .logo {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .nav-actions {
+        gap: 7px;
+    }
+
+    .nav-actions a,
+    .nav-actions button {
+        font-size: 8px;
+    }
+
+    .nav-actions i {
+        font-size: 12px;
+    }
+
+    .links {
+        gap: 16px;
+    }
+
+    .links a {
+        font-size: 8px;
     }
 }
